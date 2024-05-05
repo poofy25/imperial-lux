@@ -1,0 +1,12 @@
+{
+    "Index": {
+      "title": "Hello world!"
+    },
+    "Navbar": {
+      "works":"Our works",
+      "services":"Our works",
+      "testimonials":"Testimonials",
+      "contacts":"Contacts",
+      "button":"Request a free quote"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "Hello bleat!"
+  },
+  "Navbar": {
+    "works":"Lucrari",
+    "services":"Servicii",
+    "testimonials":"Recenzii",
+    "contacts":"Contacte",
+    "button":"Cere o ofertă"
+  }
+}
