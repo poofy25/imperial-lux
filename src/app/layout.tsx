@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Raleway , Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from '@/components/Navbar/NavBar'
+import Footer from "@/components/Footer/Footer"
 
-import {NextIntlClientProvider, useMessages} from 'next-intl';
 
-const inter = Inter({ subsets: ["latin"] });
+const RalewayFont = Raleway({ subsets: ["latin"], variable: '--font-raleway' });
+const InterFont = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: "ImperialLux",
@@ -14,24 +15,19 @@ export const metadata: Metadata = {
 
 export default function LocaleLayout({
   children,
-  params: {locale}
 }: {
   children: React.ReactNode;
-  params: {locale: string};
 }) {
 
-  const messages = useMessages();
 
-  console.log(messages)
 
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+    <html lang='en' >
+      <body className={`${RalewayFont.variable} ${InterFont.variable}`}>
           <NavBar/>
           {children}
-        </NextIntlClientProvider>
+          <Footer/>
       </body>
     </html>
   );

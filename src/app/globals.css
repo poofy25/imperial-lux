@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html , body , #root {
+  @apply bg-primary text-white font-Raleway
+}
+.boxShadow {
+  box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.25);
+}
+
+
+label {
+
+}
+
+input {
+  @apply p-3 px-4 w-[500px] bg-transparent border-2 border-solid border-complimentary
+}
+
+textarea {
+  @apply p-3 px-4 h-[200px] w-[500px] bg-transparent border-2 border-solid border-complimentary resize-none
+}

@@ -14,8 +14,21 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
+        "background":{
+          DEFAULT:'#111111',
+          "invert":"#eeeeee"
+        },
         "primary":"#111111",
-        "complimentary":"#D4B046"
+        "complimentary":"#D4B046",
+        "text":{
+          DEFAULT:"#eeeeee",
+          invert:"#111111"
+        }
+
+      },
+      fontFamily: {
+        Raleway: ['var(--font-raleway)'], // note: you can call the left side of this whatever you want - barlow-bold or title-font or foo-bar, this is what you'll use in your Tailwind css classes to use this font
+        Inter: ['var(--font-inter)'], // note: the bit that goes inside the var() function is the same variable name we defined in app.tsx
       }
     },
   },

@@ -4,30 +4,33 @@ import { useState } from "react"
 
 import Image from "next/image"
 import Link from "next/link"
-import { useMessages } from "next-intl"
 
 
 import logoImg from '/public/imgs/logo.png'
+import FacebookSvg from '/public/svgs/facebook.svg'
+import InstagramSvg from '/public/svgs/instagram.svg'
+
 
 import NavBarMenu from './NavBarMenu'
+
 
 export default function NavBar () {
 
     const [isMenuOpen , setIsMenuOpen] = useState(false)
-    const messages = useMessages();
-    const t = messages.Navbar
-
 
     return (
         <>
-            <div className="w-full h-[60px] bg-primary flex justify-between items-center px-[7.5vw] box-border z-40 fixed top-0">
-                <Link href='tel:0000000'>+353 043 32 412</Link>
-                <Link href='/contacts'>{t['button']}</Link>
+            <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[12.5vw] box-border z-40 relative top-0">
+                <Link href='tel:+353852067151' className="font-bold font-Inter text-sm">+353 85 206 7151</Link>
+                <div className="flex gap-2 items-center justify-center grayscale brightness-0">
+                    <Link href='#'><Image src={FacebookSvg} width='24' height='24'/></Link>
+                    <Link href='#'><Image src={InstagramSvg} width='24' height='24'/></Link>
+                </div>
             </div>
             <nav id='navbar'
-            className={` navBar
-            flex flex-row items-center w-full h-[80px] overflow-hidden px-[7.5vw]
-            justify-between box-border fixed top-[60px] z-40  transition-all bg-primary  bg-[linear-gradient(0deg,rgba(0,0,0,0)0%,rgba(17,17,17,1)75%)]
+            className={` navBar border-0 border-b border-solid border-[rgba(255,255,255,0.1)]
+            flex flex-row items-center w-full h-[80px] overflow-hidden px-[12.5vw] 
+            justify-between box-border sticky top-[0px] z-40 transition-all bg-background
             `}
             >
                 {/* Logo */}
@@ -39,6 +42,7 @@ export default function NavBar () {
 
                 {/* Navbar menu */}
                 <NavBarMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+
                 {/* Hamburger button */}
                 <div className="relative h-full flex flex-col justify-center items-center sm:hidden ">
 
@@ -63,16 +67,15 @@ export default function NavBar () {
                 
 
                 {/* Nav buttons */}
-                <div className="hidden font-semibold gap-8 [&_*]:py-4 sm:flex">
-                    <Link href='/works' className='hover:text-complimentary transition-all'>{t['works']}</Link>
-                    {/* <Link href='/servicii'>Servicii</Link> */}
-                    <Link href='/services' className='hover:text-complimentary transition-all'>{t['services']}</Link>
-                    <Link href='/testimonials' className='hover:text-complimentary transition-all'>{t['testimonials']}</Link>
-                    <Link href='/contacts' className='hover:text-complimentary transition-all'>{t['contacts']}</Link>
+                <div className="hidden font-bold gap-8 text-xs font-Raleway tracking-[3px] [&_*]:py-4 sm:flex">
+                    <Link href='/#hero' className='hover:text-complimentary transition-all'>HOME</Link>
+                    <Link href='/#services' className='hover:text-complimentary transition-all'>SERVICES</Link>
+                    <Link href='/#works' className='hover:text-complimentary transition-all'>WORKS</Link>
+                    <Link href='/#contacts' className='hover:text-complimentary transition-all'>CONTACTS</Link>
                 </div>
 
-                <Link className="hidden sm:flex" href='/contacts'>
-                    {t['button']}
+                <Link className="hidden font-bold bg-complimentary py-4 px-8 text-xs tracking-[3px] border-2 border-solid border-complimentary hover:bg-[rgba(212,176,70,0.25)] transition-all sm:flex" href='/contacts'>
+                    GET QUOTE
                 </Link>
 
             
