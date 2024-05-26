@@ -11,7 +11,7 @@ import ContactsForm from './ContactsForm'
 
 export default function ContactsSection () {
     return (
-        <section id='contacts' className="flex flex-col h-fit gap-12 items-center px-[12.5vw] py-24 scroll-mt-[80px]">
+        <section id='contacts' className="flex flex-col h-fit gap-12 items-center  px-[7.5vw] md:px-[12.5vw] py-24 scroll-mt-[80px]">
         <h2 className="text-4xl font-semibold text-center tracking-[3px]">CONTACT US AND GET A FREE QUOTE</h2>
         <div className="w-full h-[1px] bg-complimentary opacity-75"></div>
         
