@@ -50,14 +50,14 @@ export default function NavBar () {
                     className="relative w-[30px] h-[22px] p-0 bg-transparent hover:bg-transparent">
 
 
-                        <div className={`w-full h-[3px] absolute top-0 left-0 bg-white rounded transition-all
+                        <div className={`w-full h-[3px] absolute top-0 left-0 bg-white transition-all
                         ${isMenuOpen ? "rotate-45 translate-y-[10px]" : ""}
                         `}></div>
-                        <div className={`w-full h-[3px] absolute left-0 translate-y-[-50%] bg-white rounded transition-all
+                        <div className={`w-full h-[3px] absolute left-0 translate-y-[-50%] bg-white transition-all
                         ${isMenuOpen ? "translate-x-[100px]" : ""}
                     
                         `}></div>
-                        <div className={`w-full h-[3px] absolute bottom-0 left-0 bg-white rounded transition-all
+                        <div className={`w-full h-[3px] absolute bottom-0 left-0 bg-white transition-all
                         ${isMenuOpen ? "-rotate-45 translate-y-[-9px]" : ""}
                         `}></div>
                     </button>
