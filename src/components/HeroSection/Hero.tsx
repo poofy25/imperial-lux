@@ -12,7 +12,7 @@ export default async function HeroSection () {
             <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.42)] -z-10"></div>
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-6xl text-center font-bold mb-4 tracking-[3px]">Painting & Decoration</h1>
-                <p className="mb-8 text-xl text-center tracking-[1px]">Painting & Decoration services for your house and apartment!</p>
+                <p className="mb-8 text-base md:text-xl text-center tracking-[1px]">Painting & Decoration services for your house and apartment!</p>
                 <Link href='/#contacts'
                 className="py-4 px-8 bg-complimentary font-bold tracking-[3px] border-2 border-solid border-complimentary
                 hover:bg-[rgba(212,176,70,0.25)] transition-all

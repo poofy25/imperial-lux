@@ -18,38 +18,38 @@ export default function WorksSection () {
         <div className="w-full h-[1px] bg-primary opacity-75"></div>
         <div className="grid grid-cols-1 gap-y-8 md:gap-x-8 md:gap-y-8 md:grid-cols-2 w-full">
             <div className="flex flex-col w-full p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works1Img} fill/>
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works1Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            </div>
+            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7] ">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works2Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             </div>
             <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works2Img} fill/>
-                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
-            </div>
-            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works3Img} fill/>
-                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
-            
-            </div>
-            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works4Img} fill/>
-                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
-            </div>
-            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works5Img} fill/>
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works3Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             
             </div>
             <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works6Img} fill/>
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works4Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             </div>
             <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works7Img} fill/>
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works5Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             
             </div>
             <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
-                <Image className="object-cover absolute top-0 left-0 -z-10" src={Works8Img} fill/>
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works6Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            </div>
+            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works7Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            
+            </div>
+            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works8Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             </div>
             

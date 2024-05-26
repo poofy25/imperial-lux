@@ -19,18 +19,18 @@ export default function ContactsSection () {
             <div className='wfull md:w-[30%] flex flex-col gap-4 tracking-[1px]'>
                 
             <Link href='tel:+353852067151' className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
-                <Image src={CallSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> +353 85 206 7151
+                <Image alt='icon' src={CallSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> +353 85 206 7151
             </Link>
             <Link href='#' className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
-                <Image src={EmailSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> email@gmail.com
+                <Image alt='icon' src={EmailSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> email@gmail.com
             </Link>
 
             <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank" className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
-                <Image src={FacebookSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> @ImperialLux 
+                <Image alt='icon' src={FacebookSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> @ImperialLux 
             </Link>
 
             <Link href='https://www.instagram.com/imperiallux.painting' target="_blank" className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
-                <Image src={InstagramSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> @imperiallux.painting
+                <Image alt='icon' src={InstagramSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> @imperiallux.painting
             </Link>
 
 

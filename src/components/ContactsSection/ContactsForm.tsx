@@ -13,7 +13,7 @@ export default function ContactsForm () {
             </div>
             <div className="flex flex-col relative">
                 <label className="absolute left-2 top-0 translate-y-[-50%] bg-primary px-3 font-semibold">Details</label>
-                <textarea type="text" placeholder="Details about what you need"></textarea>
+                <textarea placeholder="Details about what you need"></textarea>
             </div>
             
             <button type="submit"
