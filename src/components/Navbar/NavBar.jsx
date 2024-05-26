@@ -29,7 +29,7 @@ export default function NavBar () {
             </div>
             <nav id='navbar'
             className={` navBar border-0 border-b border-solid border-[rgba(255,255,255,0.1)]
-            flex flex-row items-center w-full h-[80px] overflow-hidden px-[12.5vw] 
+            flex flex-row items-center w-full h-[80px] overflow-hidden px-[7.5vw] md:px-[12.5vw] 
             justify-between box-border sticky top-[0px] z-40 transition-all bg-background
             `}
             >
