@@ -27,5 +27,5 @@ h2 {
   @apply !text-3xl md:!text-4xl
 }
 h1 {
-  @apply !text-6xl md:!text-7xl
+  @apply !text-5xl md:!text-7xl
 }
