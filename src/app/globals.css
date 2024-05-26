@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html , body , #root {
+  scroll-behavior: smooth;
   @apply bg-primary text-white font-Raleway
 }
 .boxShadow {
@@ -15,9 +16,9 @@ label {
 }
 
 input {
-  @apply p-3 px-4 w-[500px] bg-transparent border-2 border-solid border-complimentary
+  @apply p-3 px-4 w-full md:w-[500px] bg-transparent border-2 border-solid border-complimentary
 }
 
 textarea {
-  @apply p-3 px-4 h-[200px] w-[500px] bg-transparent border-2 border-solid border-complimentary resize-none
+  @apply p-3 px-4 h-[200px] w-full md:w-[500px] bg-transparent border-2 border-solid border-complimentary resize-none
 }

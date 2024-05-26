@@ -23,8 +23,8 @@ export default function NavBar () {
             <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[12.5vw] box-border z-40 relative top-0">
                 <Link href='tel:+353852067151' className="font-bold font-Inter text-sm">+353 85 206 7151</Link>
                 <div className="flex gap-2 items-center justify-center grayscale brightness-0">
-                    <Link href='#'><Image src={FacebookSvg} width='24' height='24'/></Link>
-                    <Link href='#'><Image src={InstagramSvg} width='24' height='24'/></Link>
+                    <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank"><Image src={FacebookSvg} width='24' height='24'/></Link>
+                    <Link href='https://www.instagram.com/imperiallux.painting' target="_blank"><Image src={InstagramSvg} width='24' height='24'/></Link>
                 </div>
             </div>
             <nav id='navbar'
@@ -68,13 +68,13 @@ export default function NavBar () {
 
                 {/* Nav buttons */}
                 <div className="hidden font-bold gap-8 text-xs font-Raleway tracking-[3px] [&_*]:py-4 sm:flex">
-                    <Link href='/#hero' className='hover:text-complimentary transition-all'>HOME</Link>
+                    <Link href='/#' className='hover:text-complimentary transition-all'>HOME</Link>
                     <Link href='/#services' className='hover:text-complimentary transition-all'>SERVICES</Link>
                     <Link href='/#works' className='hover:text-complimentary transition-all'>WORKS</Link>
                     <Link href='/#contacts' className='hover:text-complimentary transition-all'>CONTACTS</Link>
                 </div>
 
-                <Link className="hidden font-bold bg-complimentary py-4 px-8 text-xs tracking-[3px] border-2 border-solid border-complimentary hover:bg-[rgba(212,176,70,0.25)] transition-all sm:flex" href='/contacts'>
+                <Link className="hidden font-bold bg-complimentary py-4 px-8 text-xs tracking-[3px] border-2 border-solid border-complimentary hover:bg-[rgba(212,176,70,0.25)] transition-all sm:flex" href='/#contacts'>
                     GET QUOTE
                 </Link>
 

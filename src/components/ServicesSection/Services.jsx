@@ -7,10 +7,10 @@ import Services3Img from '/public/imgs/services3.jpg'
 
 export default function ServicesSection () {
     return (
-        <section id="services" className="flex flex-col min-h-[100vh] gap-12 items-center justify-center px-[12.5vw] py-16">
+        <section id="services" className="flex flex-col h-fit gap-12 items-center justify-center px-[7.5vw] md:px-[12.5vw] py-24 scroll-mt-[80px]">
             <h2 className="text-4xl font-semibold tracking-[3px]">OUR SERVICES</h2>
             <div className="w-full h-[1px] bg-complimentary opacity-75"></div>
-            <div className="flex gap-8 w-full items-stretch">
+            <div className="flex flex-col gap-8 w-full items-stretch md:flex-row">
                 <div className="flex flex-col flex-1 p-8 relative z-10 boxShadow">
                     <Image className="object-cover absolute top-0 left-0 -z-10" src={Services1Img} fill/>
                     <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.6)] -z-10"></div>
