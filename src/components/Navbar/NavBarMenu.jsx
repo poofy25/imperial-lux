@@ -25,9 +25,13 @@ export default function NavBarMenu ({isMenuOpen , setIsMenuOpen}) {
 
 
                 {/* Links */}
-                <div className=" text-2xl w-full h-full
+                <div className=" text-3xl w-full h-full font-Raleway tracking-[3px]
                 flex flex-col justify-start items-center gap-6  pt-[160px] box-border
                 ">   
+                    <Link onClick={()=>setIsMenuOpen(false)} href='/#' className='hover:text-complimentary transition-all'>HOME</Link>
+                    <Link onClick={()=>setIsMenuOpen(false)} href='/#services' className='hover:text-complimentary transition-all'>SERVICES</Link>
+                    <Link onClick={()=>setIsMenuOpen(false)} href='/#works' className='hover:text-complimentary transition-all'>WORKS</Link>
+                    <Link onClick={()=>setIsMenuOpen(false)} href='/#contacts' className='hover:text-complimentary transition-all'>CONTACTS</Link>
                     
                 </div>
 

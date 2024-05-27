@@ -20,7 +20,7 @@ export default function NavBar () {
 
     return (
         <>
-            <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[7.5vw] md:px-[12.5vw] box-border z-40 relative top-0">
+            <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[7.5vw] md:px-[12.5vw] box-border z-40 sticky md:relative top-0">
                 <Link href='tel:+353852067151' className="font-bold font-Inter text-sm">+353 85 206 7151</Link>
                 <div className="flex gap-2 items-center justify-center grayscale brightness-0">
                     <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank"><Image src={FacebookSvg} width='24' height='24'/></Link>
@@ -30,7 +30,7 @@ export default function NavBar () {
             <nav id='navbar'
             className={` navBar border-0 border-b border-solid border-[rgba(255,255,255,0.1)]
             flex flex-row items-center w-full h-[80px] overflow-hidden px-[7.5vw] md:px-[12.5vw] 
-            justify-between box-border sticky top-[0px] z-40 transition-all bg-background
+            justify-between box-border sticky top-[36px] md:top-[0px] z-40 transition-all bg-background
             `}
             >
                 {/* Logo */}
