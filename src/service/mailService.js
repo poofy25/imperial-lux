@@ -2,6 +2,7 @@
 var nodemailer = require("nodemailer");
 //-----------------------------------------------------------------------------
 export async function sendMail(otpText) {
+  try {
   var transporter = await nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -28,6 +29,11 @@ export async function sendMail(otpText) {
         resolve(response);
       }
     });
+    
   });
-  return response
+  } catch (error) {
+    console.error('Error sending mail:', error);
+    return { error: 'Failed to send email', details: error.message };
+  }
+  return true
 }
