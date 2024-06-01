@@ -20,8 +20,8 @@ export default function NavBar () {
 
     return (
         <>
-            <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[7.5vw] md:px-[12.5vw] box-border z-40 sticky md:relative top-0">
-                <Link href='tel:+353852067151' className="font-bold font-Inter text-sm">+353 85 206 7151</Link>
+            <div className="w-full h-[36px] bg-background-invert text-text-invert flex justify-between items-center px-[7.5vw] lg:px-[12.5vw] box-border z-40 sticky lg:relative top-0">
+                <Link href='tel:+353852067151' className="font-bold font-Inter text-lg">+353 85 206 7151</Link>
                 <div className="flex gap-2 items-center justify-center grayscale brightness-0">
                     <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank"><Image src={FacebookSvg} width='24' height='24'/></Link>
                     <Link href='https://www.instagram.com/imperiallux.painting' target="_blank"><Image src={InstagramSvg} width='24' height='24'/></Link>
@@ -29,8 +29,8 @@ export default function NavBar () {
             </div>
             <nav id='navbar'
             className={` navBar border-0 border-b border-solid border-[rgba(255,255,255,0.1)]
-            flex flex-row items-center w-full h-[80px] overflow-hidden px-[7.5vw] md:px-[12.5vw] 
-            justify-between box-border sticky top-[36px] md:top-[0px] z-40 transition-all bg-background
+            flex flex-row items-center w-full h-[80px] overflow-hidden px-[7.5vw] lg:px-[12.5vw] 
+            justify-between box-border sticky top-[36px] lg:top-[0px] z-40 transition-all bg-background
             `}
             >
                 {/* Logo */}
@@ -44,7 +44,7 @@ export default function NavBar () {
                 <NavBarMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
 
                 {/* Hamburger button */}
-                <div className="relative h-full flex flex-col justify-center items-center sm:hidden ">
+                <div className="relative h-full flex flex-col justify-center items-center lg:hidden ">
 
                     <button onClick={()=>setIsMenuOpen(current=>!current)}
                     className="relative w-[30px] h-[22px] p-0 bg-transparent hover:bg-transparent">
@@ -67,14 +67,14 @@ export default function NavBar () {
                 
 
                 {/* Nav buttons */}
-                <div className="hidden font-bold gap-8 text-xs font-Raleway tracking-[3px] [&_*]:py-4 sm:flex">
+                <div className="hidden font-bold gap-8 text-xs font-Raleway tracking-[3px] [&_*]:py-4 lg:flex">
                     <Link href='/#' className='hover:text-complimentary transition-all'>HOME</Link>
                     <Link href='/#services' className='hover:text-complimentary transition-all'>SERVICES</Link>
                     <Link href='/#works' className='hover:text-complimentary transition-all'>WORKS</Link>
                     <Link href='/#contacts' className='hover:text-complimentary transition-all'>CONTACTS</Link>
                 </div>
 
-                <Link className="hidden font-bold bg-complimentary py-4 px-8 text-xs tracking-[3px] border-2 border-solid border-complimentary hover:bg-[rgba(212,176,70,0.25)] transition-all sm:flex" href='/#contacts'>
+                <Link className="hidden font-bold bg-complimentary py-4 px-8 text-xs tracking-[3px] border-2 border-solid border-complimentary hover:bg-[rgba(212,176,70,0.25)] transition-all lg:flex" href='/#contacts'>
                     GET QUOTE
                 </Link>
 

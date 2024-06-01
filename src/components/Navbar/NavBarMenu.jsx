@@ -12,14 +12,14 @@ export default function NavBarMenu ({isMenuOpen , setIsMenuOpen}) {
             ${isMenuOpen ? 'top-[80px] no-doc-scroll' : 'top-[-110%]'}
             w-full h-full fixed left-0 -z-30 transition-all
             bg-[rgba(0,0,0,0.5)] 
-            flex sm:hidden
+            flex lg:hidden
         `}>
 
             {/* Content */}
             <div className="flex flex-col justify-start items-center w-full h-full bg-primary z-20 textureBackground">
 
                 {/* Background Image */}
-                <div className="absolute w-full h-[100vh] -z-10 left-0 top-[-80px] bg-[url(/imgs/hero1.jpg)] md:bg-[url(/imgs/hero2.jpg)] !bg-cover !bg-center"></div>
+                <div className="absolute w-full h-[100vh] -z-10 left-0 top-[-80px] bg-[url(/imgs/hero1.jpg)] lg:bg-[url(/imgs/hero2.jpg)] !bg-cover !bg-center"></div>
                 <div className="absolute w-full h-[80px] z-10 left-0 top-[-80px] lightNavBarBackground "></div>
                 {/* <div className="absolute w-full h-[100vh] left-0 top-[-80px] bg-[rgba(0,0,0,0.25)] -z-10"></div> */}
 
