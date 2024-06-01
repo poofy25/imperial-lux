@@ -32,3 +32,19 @@ h2 {
 h1 {
   @apply !text-5xl md:!text-7xl
 }
+
+.erorrBox{
+  background-color: #e7195a;
+  border: 1px solid #790026;
+  padding: 1rem;
+  box-sizing: border-box;
+  @apply font-Raleway font-semibold
+}
+.sucessBox{
+  background-color: rgba(25, 231, 46);
+  border: 1px solid #167900;
+  padding: 1rem;
+  box-sizing: border-box;
+  @apply font-Raleway font-semibold
+
+}

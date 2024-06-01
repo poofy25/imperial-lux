@@ -31,7 +31,7 @@ export default function Footer () {
                 <div className="flex flex-col gap-2 flex-1 items-center md:items-start">
                     <h3 className="text-2xl font-semibold mb-2">Contacts</h3>
                     <Link href='tel:+353852067151' className="opacity-75 hover:opacity-100 transition-all w-fit font-Inter">+353 85 206 7151</Link> 
-                    <Link href='#' className="opacity-75 hover:opacity-100 transition-all w-fit">email@gmail.com</Link>
+                    <Link href='mailto:vgperonalmail@gmail.com' className="opacity-75 hover:opacity-100 transition-all w-fit">vgperonalmail@gmail.com</Link>
                     <div className="flex gap-2">
                         <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank" className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
                             <Image alt='icon' src={FacebookSvg} width='24' height='24' className='hover:opacity-50 transition-all'/>

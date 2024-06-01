@@ -21,8 +21,8 @@ export default function ContactsSection () {
             <Link href='tel:+353852067151' className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
                 <Image alt='icon' src={CallSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> +353 85 206 7151
             </Link>
-            <Link href='#' className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
-                <Image alt='icon' src={EmailSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> email@gmail.com
+            <Link href='mailto:vgperonalmail@gmail.com' className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
+                <Image alt='icon' src={EmailSvg} width='32' height='32' className='hover:opacity-50 transition-all'/> vgperonalmail@gmail.com
             </Link>
 
             <Link href='https://www.facebook.com/profile.php?id=61552154207088' target="_blank" className='flex justify-center items-center gap-4 font-Inter w-fit hover:text-complimentary transition-all'>
