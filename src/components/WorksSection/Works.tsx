@@ -10,6 +10,10 @@ import Works5Img from '/public/imgs/works/works5.jpg'
 import Works6Img from '/public/imgs/works/works6.jpg'
 import Works7Img from '/public/imgs/works/works7.jpg'
 import Works8Img from '/public/imgs/works/works8.jpg'
+import Works9Img from '/public/imgs/works/works9.jpg'
+import Works10Img from '/public/imgs/works/works10.jpg'
+import Works11Img from '/public/imgs/works/works11.jpg'
+
 
 export default function WorksSection () {
     return (
@@ -50,6 +54,18 @@ export default function WorksSection () {
             </div>
             <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
                 <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works8Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            </div>
+            {/* <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works9Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            </div> */}
+            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works10Img} fill/>
+                <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
+            </div>
+            <div className="flex flex-col w-full  p-8 relative z-10 boxShadow aspect-[10/7]">
+                <Image alt="Work image" className="object-cover absolute top-0 left-0 -z-10" src={Works11Img} fill/>
                 <div className="absolute w-full h-full left-0 top-0 bg-[rgba(0,0,0,0.25)] -z-10"></div>
             </div>
             
