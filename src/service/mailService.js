@@ -3,8 +3,9 @@ var nodemailer = require("nodemailer");
 //-----------------------------------------------------------------------------
 export async function sendMail(otpText) {
   try {
-  var transporter = await nodemailer.createTransport({
-    service: "gmail",
+  var transporter = nodemailer.createTransport({
+    host: 'theimperiallux.com',
+    port: 587,
     auth: {
       user: process.env.NODEMAILER_EMAIL,
       pass: process.env.NODEMAILER_PW,
@@ -16,7 +17,7 @@ export async function sendMail(otpText) {
 
   var mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
-    to: process.env.NODEMAILER_EMAIL,
+    to: "vgpersonalmail@gmail.com",
     subject: 'Quote request from ImperialLux site !',
     text: otpText,
   };
@@ -33,7 +34,7 @@ export async function sendMail(otpText) {
   });
   } catch (error) {
     console.error('Error sending mail:', error);
-    return { error: 'Failed to send email', details: error.message };
+    return { error: 'Failed to send email', details: error.message, error:error };
   }
   return true
 }

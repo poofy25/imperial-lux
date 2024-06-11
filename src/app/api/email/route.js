@@ -14,5 +14,5 @@ export async function POST(req){
     );
     // console.log(response)
     if(!response.error) return NextResponse.json({ok:true,msg:"Sent succesfuly"})
-    return NextResponse.json({ok:false,msg:"A server error has accoured"})
+    return NextResponse.json({ok:false,msg:"A server error has accoured", error:response.error})
 }
